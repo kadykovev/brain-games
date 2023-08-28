@@ -13,5 +13,8 @@
             "email": "jeka34volg@maail.ru"
         }
     ],
-    "require": {}
+    "require": {},
+    "bin": [
+        "bin/brain-games"
+    ]
 }
