@@ -6,3 +6,6 @@ brain-games: # запуск игры
 
 validate:
 	composer validate
+
+lint: # запуск линтера
+	composer exec --verbose phpcs -- --standard=PSR12 src bin
