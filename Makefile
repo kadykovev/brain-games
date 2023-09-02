@@ -1,8 +1,11 @@
 install: # установить зависимости
 	composer install
 
-brain-games: # запуск игры
+brain-games:
 	./bin/brain-games
+
+brain-even:
+	./bin/brain-even
 
 validate:
 	composer validate
