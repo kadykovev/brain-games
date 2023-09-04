@@ -12,4 +12,4 @@ if (file_exists($autoloadPath1)) {
 
 use function BrainGames\Engine\run;
 
-run('even');
+run("calc");

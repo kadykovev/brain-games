@@ -2,9 +2,7 @@
 
 namespace BrainGames\Games\Even;
 
-use function cli\line;
-use function cli\prompt;
-use function BrainGames\Cli\greeting;
+const RULES = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function isEven(int $num): bool
 {
@@ -15,27 +13,9 @@ function isEven(int $num): bool
     return true;
 }
 
-function even(): void
+function even(): array
 {
-    $rules = 'Answer "yes" if the number is even, otherwise answer "no".';
-    $numberOfQuestions = 3;
+    $randomNumber = rand(0, 99);
 
-    $name = greeting();
-    line($rules);
-
-    for ($i = 1; $i <= $numberOfQuestions; $i++) {
-        $randomNumber = rand(0, 99);
-        line("Question: %s", $randomNumber);
-        $answer = prompt("Your answer");
-
-        if ((isEven($randomNumber) && $answer == 'yes') || (!isEven($randomNumber) && $answer == 'no')) {
-            line("Correct!");
-        } else {
-            line("'%s' is wrong answer ;(. Correct answer was '%s'.", $answer, isEven($randomNumber) ? 'yes' : 'no');
-            line("Let's try again, %s!", $name);
-            return;
-        }
-    }
-
-    line("Congratulations, %s!", $name);
+    return ['question' => $randomNumber, 'answer' => isEven($randomNumber) ? 'yes' : 'no'];
 }
