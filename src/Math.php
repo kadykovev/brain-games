@@ -11,7 +11,7 @@ function isEven(int $num): bool
     return true;
 }
 
-function isPrime($number): bool
+function isPrime( int $number): bool
 {
     if ($number == 2) {
         return true;
