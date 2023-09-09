@@ -11,6 +11,8 @@ function progression(): array
     $interval = rand(1, 10);
     $placeInLine = rand(0, $numOfNumbers - 1);
 
+    $arrOfNumbers = [];
+
     for ($i = 0; $i < $numOfNumbers; $i++) {
         $currentNum = $startNumber + $interval * $i;
 
