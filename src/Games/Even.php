@@ -2,16 +2,9 @@
 
 namespace BrainGames\Games\Even;
 
+use function BrainGames\Math\isEven;
+
 const RULES = 'Answer "yes" if the number is even, otherwise answer "no".';
-
-function isEven(int $num): bool
-{
-    if ($num % 2) {
-        return false;
-    }
-
-    return true;
-}
 
 function even(): array
 {

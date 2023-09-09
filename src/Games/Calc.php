@@ -6,7 +6,6 @@ const RULES = "What is the result of the expression?";
 
 function calc(): array
 {
-    $rules = "What is the result of the expression?";
     $operation = rand(1, 3);
     $num1 = rand(0, 25);
     $num2 = rand(0, 15);

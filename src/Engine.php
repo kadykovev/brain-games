@@ -6,7 +6,7 @@ use function BrainGames\Cli\greeting;
 use function cli\line;
 use function cli\prompt;
 
-function engine(string $game): void
+function run(string $game): void
 {
     $rounds = 3;
     $rules = constant("\\BrainGames\\Games\\" . ucfirst($game) . "\\RULES");
@@ -30,9 +30,4 @@ function engine(string $game): void
     }
 
     line("Congratulations, %s!", $name);
-}
-
-function run(string $game): void
-{
-    engine($game);
 }
