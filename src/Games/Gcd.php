@@ -12,7 +12,7 @@ function gcd(): array
     $additionalGCD = 1;
 
     for ($i = 2; $i <= $initialNum1 && $i <= $initialNum2; $i++) {
-        if ((bool)!($initialNum1 % $i) && (bool)!($initialNum2 % $i)) {
+        if (!(bool)($initialNum1 % $i) && !(bool)($initialNum2 % $i)) {
             $additionalGCD = $i;
         }
     }

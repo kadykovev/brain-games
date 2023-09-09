@@ -11,6 +11,7 @@ function run(string $game): void
     $rounds = 3;
     $rules = constant("\\BrainGames\\Games\\" . ucfirst($game) . "\\RULES");
     $currentGame = "\\BrainGames\\Games\\" . ucfirst($game) . "\\" . $game;
+    $gameData = [];
 
     $name = greeting();
     line($rules);
