@@ -8,12 +8,12 @@ PHP >= 8
 
 ## Installation
 Clone the project using composer: </br>
-`git clone git@github.com:jeka34volg/php-project-45.git`</br>
+`git clone git@github.com:jeka34volg/brain-games.git`</br>
 Go to the project directory: </br>
-`cd php-project-45`</br>
+`cd brain-games`</br>
 Run the installation: </br>
 `make install` </br></br>
-<a href="https://asciinema.org/a/607010" target="_blank"><img src="https://asciinema.org/a/607010.svg" /></a>
+<a href="https://asciinema.org/a/607061" target="_blank"><img src="https://asciinema.org/a/607061.svg" /></a>
 
 ## Description
 Some mini console brain games.
