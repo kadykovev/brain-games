@@ -4,7 +4,7 @@ namespace BrainGames\Math;
 
 function isEven(int $num): bool
 {
-    if (ceil($num % 2)) {
+    if ((bool) ($num % 2)) {
         return false;
     }
 
