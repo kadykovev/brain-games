@@ -16,7 +16,10 @@ function run(string $game): void
     line($rules);
 
     for ($i = 0; $i < $rounds; $i++) {
-        $gameData = call_user_func($currentGame);
+        if (is_callable($currentGame)) {
+            $gameData = call_user_func($currentGame);
+        }
+
         line("Question: %s", $gameData['question']);
         $answer = prompt("Your answer");
 
