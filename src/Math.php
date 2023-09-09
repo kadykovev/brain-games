@@ -11,13 +11,13 @@ function isEven(int $num): bool
     return true;
 }
 
-function isPrime( int $number): bool
+function isPrime(int $number): bool
 {
     if ($number == 2) {
         return true;
     }
 
-    if ($number % 2 == 0) {
+    if ($number == 1 || $number % 2 == 0) {
         return false;
     }
 
