@@ -4,10 +4,11 @@
 <a href="https://codeclimate.com/github/jeka34volg/php-project-45/maintainability"><img src="https://api.codeclimate.com/v1/badges/4f1528020c29f41fdef2/maintainability" /></a></br>
 
 ## Requirements
+Composer </br>
 PHP >= 8
 
 ## Installation
-Clone the project using composer: </br>
+Clone the project: </br>
 `git clone git@github.com:jeka34volg/brain-games.git`</br>
 Go to the project directory: </br>
 `cd brain-games`</br>
