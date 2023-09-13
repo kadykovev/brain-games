@@ -21,6 +21,9 @@ function runCalc(): void
         $num1 = rand(0, 25);
         $num2 = rand(0, 15);
 
+        $question = '';
+        $answer = '';
+
         switch ($operation) {
             case '*':
                 $question = "{$num1} * {$num2}";
