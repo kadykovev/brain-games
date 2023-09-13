@@ -3,12 +3,8 @@
     "description": "First project",
     "type": "project",
     "autoload": {
-        "psr-4": {
-            "Hexlet\\Code\\": "src/"
-        },
         "files": [
             "src/Cli.php",
-            "src/Math.php",
             "src/Engine.php",
             "src/Games/Even.php",
             "src/Games/Calc.php",

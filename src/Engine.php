@@ -2,24 +2,22 @@
 
 namespace BrainGames\Engine;
 
-use function BrainGames\Cli\greeting;
 use function cli\line;
 use function cli\prompt;
 
-function run(string $game): void
+function engine(callable $generateGameData, string $rules): void
 {
     $rounds = 3;
-    $rules = constant("\\BrainGames\\Games\\" . ucfirst($game) . "\\RULES");
-    $currentGame = "\\BrainGames\\Games\\" . ucfirst($game) . "\\" . $game;
     $gameData = [];
 
-    $name = greeting();
+    line('Welcome to the Brain Games!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
+
     line($rules);
 
     for ($i = 0; $i < $rounds; $i++) {
-        if (is_callable($currentGame)) {
-            $gameData = call_user_func($currentGame);
-        }
+        $gameData = $generateGameData();
 
         line("Question: %s", $gameData['question']);
         $answer = prompt("Your answer");
